@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Temple City | Lodge</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lodge.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="mx-w grid jcsb aic">
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <div class="pages-header">
+                <ul class="grid">
+                    <li class="h-links pos-rel"><a href="./index.html">Home</a></li>
+                    <li class="h-links pos-rel"><a href="">About Us</a></li>
+                    <!-- <li class="h-links pos-rel"><a href="">Products</a></li> -->
+                    <li class="h-links pos-rel"><a href="./restaurats.html">Restaurants</a></li>
+                    <li class="h-links pos-rel lodge"><a href="./lodge.html">Rooms</a></li>
+                    <li class="h-links pos-rel"><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <button class="dn nav-bar pos-rel" onclick="openNavBar()">
+                <img src="./images/menu.svg.svg" alt="">
+                <div class="nav-bar-items dn pos-abs" id="nav-bar">
+                    <ul class="">
+                        <li class="h-links pos-rel"><a href="./index.html">Home</a></li>
+                        <li class="h-links pos-rel"><a href="">About Us</a></li>
+                        <!-- <li class="h-links pos-rel"><a href="">Products</a></li> -->
+                        <li class="h-links pos-rel"><a href="./restaurats.html">Restaurants</a></li>
+                        <li class="h-links pos-rel lodge"><a href="./lodge.html">Rooms</a></li>
+                        <li class="h-links pos-rel"><a href="./contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- <div class="container con-1">
+        <div class="grid aie jcsb">
+            <img src="./images/lodge1.jpeg" alt="">
+        </div>
+    </div> -->
+
+    <div class="container con-2 bg-bro">
+        <div class="mx-w grid aie jcsb">
+            <div class="">
+                <h2>Welcome To</h2>
+                <h1>Hotel Temple City</h1>
+            </div>
+            <!-- <div><img src="./images/lodge.jpg" alt=""></div> -->
+        </div>
+    </div>
+
+    <div class="container con-3">
+        <div class="mx-w">
+            <h2 class="tac">Our Rooms</h2>
+            <h3 class="tac">Where Tranquility Meets Tradition</h3>
+            <div class="img-gallery">
+                <div class="grid">
+                    <div><img data-aos="fade-right" src="./images/lodge-ig1.jpg" alt=""></div>
+                    <div><img data-aos="fade-left" src="./images/lodge-ig4.jpeg" alt=""></div>
+                </div>
+                <div class="grid">
+                    <div><img data-aos="fade-right" src="./images/lodge-ig2.jpg" alt=""></div>
+                    <div><img data-aos="fade-left" src="./images/lodge-ig3.jpg" alt=""></div>
+                </div>
+                <div class="grid">
+                    <div><img data-aos="fade-right" src="./images/lodge-ig5.jpg" alt=""></div>
+                    <div><img data-aos="fade-left" src="./images/lodge-ig6.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container con-4 bg-bro">
+        <div class="mx-w">
+            <h2 class="tac">OUR LOCATIONS</h2>
+            <p>For bookings tap the location for contact:</p>
+            <div class="grid jcsb aic">
+                <div class="flip-card">
+                    <div class="flip-card-inner pos-rel">
+                        <div class="flip-card-front pos-abs">
+                            <div class="pos-abs"><img src="./images/lodge-icon.png" alt="Avatar"></div>
+                            <h3>Ayyankottai</h3>
+                        </div>
+                        <div class="flip-card-back pos-abs">
+                            <p class="tac">Ayyanar Temple, Ayyankottai, Alanganallur (Tk), Madurai (Dt), Tamil Nadu 625221.</p>
+                            <div class="pos-rel">
+                                <i class="fa fa-phone" aria-hidden="true" style="color: black"></i>
+                                <div class="pos-abs dn">97915 93333</div>
+                                <a href="https://wa.me/+919791593333"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                <a href="mailto: rooms@hoteltemplecity.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner pos-rel">
+                        <div class="flip-card-front pos-abs">
+                            <div class="pos-abs"><img src="./images/lodge-icon.png" alt="Avatar"></div>
+                            <h3>Alampatti</h3>
+                        </div>
+                        <div class="flip-card-back pos-abs">
+                            <p class="tac">Bus stop, Near kattrampatti, Tenkasi - Madurai Rd, Tirumangalam, Tamil Nadu 625706</p>
+                            <div class="pos-rel">
+                                <i class="fa fa-phone" aria-hidden="true" style="color: black"></i>
+                                <div class="pos-abs dn">97870 08333</div>
+                                <a href="https://wa.me/+919787008333"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                <a href="mailto: rooms@hoteltemplecity.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner pos-rel">
+                        <div class="flip-card-front pos-abs">
+                            <div class="pos-abs"><img src="./images/lodge-icon.png" alt="Avatar"></div>
+                            <h3>Batlagundu By-Pass</h3>
+                        </div>
+                        <div class="flip-card-back pos-abs">
+                            <p class="tac">Dindigul to Theni Highways, G, By-pass, near Batlagundu, Meenakshipuram, Genguvarpatti, Tamil Nadu 625203</p>
+                            <div class="pos-rel">
+                                <i class="fa fa-phone" aria-hidden="true" style="color: black"></i>
+                                <div class="pos-abs dn">88016 93333</div>
+                                <a href="https://wa.me/+918801693333"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                <a href="mailto: rooms@hoteltemplecity.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner pos-rel">
+                        <div class="flip-card-front pos-abs">
+                            <div class="pos-abs"><img src="./images/lodge-icon.png" alt="Avatar"></div>
+                            <h3>Uthangudi</h3>
+                        </div>
+                        <div class="flip-card-back pos-abs">
+                            <p class="tac">Melur Main Rd, Uthangudi, Tamil Nadu 625107</p>
+                            <div class="pos-rel">
+                                <i class="fa fa-phone" aria-hidden="true" style="color: black"></i>
+                                <div class="pos-abs dn">99943 33396 <br> 98946 83336</div>
+                                <a href="https://wa.me/+919994333396"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                <a href="mailto: rooms@hoteltemplecity.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner pos-rel">
+                        <div class="flip-card-front pos-abs">
+                            <div class="pos-abs"><img src="./images/lodge-icon.png" alt="Avatar"></div>
+                            <h3>Ayyankottai Ex-press</h3>
+                        </div>
+                        <div class="flip-card-back pos-abs">
+                            <p class="tac">Ayyanar Temple, Ayyankottai, Alanganallur (Tk), Madurai (Dt), Tamil Nadu 625221.</p>
+                            <div class="pos-rel">
+                                <i class="fa fa-phone" aria-hidden="true" style="color: black"></i>
+                                <div class="pos-abs dn">82682 53333</div>
+                                <a href="https://wa.me/+918268253333"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                <a href="mailto: rooms@hoteltemplecity.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container">
+        <div class="mx-w grid jcse aic">
+            <div class="gridsec2 grid jcse aic gap100">
+                <div class="tac col-main">
+                    <img src="./images/logo-main.jpeg" alt="">
+                    <h2>Temple City</h2>
+                </div>
+                <hr>
+                <a class="">
+                    Products
+                    <p>Sweets</p>
+                    <p>Masalas</p>
+                </a>
+                <hr>
+            </div>
+            <div class="gridsec2 grid jcsb aic gap100">
+                <ul>
+                    <li><a href="./restaurats.html">Restaurants</a></li>
+                    <li><a href="./lodge.html">Rooms</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a>
+                            Contact Us
+                            <p>Phone: 63848 99333</p>
+                            <p>mail: customercare@hoteltemplecity.com</p>
+                        </a>
+                        <a>Folllow Us</a> <br>
+                        <a href="https://www.facebook.com/hoteltemplecity" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/hoteltemplecity" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com/"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script3.js"></script>
+</body>
+
+</html>

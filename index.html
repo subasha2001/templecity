@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Temple City</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="mx-w grid jcsb aic">
+            <div class="logo"><img src="./images/logo.jpg" alt=""></div>
+            <div class="pages-header">
+                <!-- <div class="grid input-div">
+                    <input class="w100" type="text" placeholder="Search for products">
+                    <button class="search h-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div> -->
+                <ul class="grid">
+                    <li class="h-links pos-rel home"><a href="./index.html">Home</a></li>
+                    <li class="h-links pos-rel"><a href="">About Us</a></li>
+                    <!-- <li class="h-links pos-rel"><a href="">Products</a></li> -->
+                    <li class="h-links pos-rel"><a href="./restaurats.html">Restaurants</a></li>
+                    <li class="h-links pos-rel"><a href="./lodge.html">Rooms</a></li>
+                    <li class="h-links pos-rel"><a href="./contact.html">Contact us</a></li>
+                </ul>
+
+            </div>
+            <button class="dn nav-bar pos-rel" onclick="openNavBar()">
+                <img src="./images/menu.svg.svg" alt="">
+                <div class="nav-bar-items dn pos-abs" id="nav-bar">
+                    <ul class="">
+                        <li class="h-links pos-rel home"><a href="./index.html">Home</a></li>
+                        <li class="h-links pos-rel"><a href="">About Us</a></li>
+                        <!-- <li class="h-links pos-rel"><a href="">Products</a></li> -->
+                        <li class="h-links pos-rel"><a href="./restaurats.html">Restaurants</a></li>
+                        <li class="h-links pos-rel"><a href="./lodge.html">Rooms</a></li>
+                        <li class="h-links pos-rel"><a href="./contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </button>
+
+            <!-- <div>
+                Add To <br> Cart
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container con-1 bg-b">
+        <div class="mx-w">
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="./images/slider1.jpeg" class="slide">
+                    <img src="./images/slider2.jpeg" class="slide">
+                    <img src="./images/slider3.jpeg" class="slide">
+                    <img src="./images/slider4.jpeg" class="slide">
+                    <img src="./images/slider5.jpeg" class="slide">
+                    <img src="./images/slider6.jpeg" class="slide">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container con-2">
+        <div class="mx-w pos-rel grid jcsb aic">
+            <div class="gridsec2">
+                <h1>Welcome to <span class="col-main">TEMPLE CITY</span></h1>
+                <h2>Where Taste Meets Tradition</h2>
+                <p>Discover the essence of Temple City, where every visit is an invitation to indulge in a world of
+                    flavors.
+                    Nestled in a spacious and serene ambience, our restaurant promises more than just a meal – it’s an
+                    experience crafted with love and dedication.Immerse yourself in a tranquil setting that complements
+                    the
+                    richness of our cuisine. Whether you seek solitude or a vibrant gathering, our ambiance sets the
+                    perfect
+                    tone.Experience hospitality at its finest. Our attentive staff ensure your comfort, making every
+                    moment
+                    at Temple City memorable.Our menu isn’t just about taste; it’s about
+                    nourishing your soul. Enjoy nutritious meals that are as healthy as they are delicious.Once you’ve
+                    tasted our dishes, you’ll be addicted. It’s a love affair with food that goes beyond the plate.
+                </p>
+            </div>
+
+            <div class="gridsec-2">
+                <img data-aos="fade-right" data-aos-duration="2000" class="pos-abs ambience" src="./images/ambience.png"
+                    alt="">
+                <img class="pos-abs hotel" src="./images/tmpl-city.jpeg" alt="">
+                <img data-aos="fade-left" data-aos-duration="2000" class="pos-abs tandoor" src="./images/Tandoor.jpg"
+                    alt="">
+                <img data-aos="fade-right" data-aos-duration="2000" class="pos-abs lodge" src="./images/lodging.jpg"
+                    alt="">
+                <img data-aos="fade-right" data-aos-duration="2000" class="pos-abs nutrition"
+                    src="./images/nutritious.jpg" alt="">
+                <img data-aos="fade-left" data-aos-duration="2000" class="pos-abs masala" src="./images/masala.jpg"
+                    alt="">
+            </div>
+            <div class="gridsec-21 dn">
+                <img class="hotel" src="./images/tmpl-city.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container con-3 bg-b">
+        <div class="mx-w">
+            <h2 class="tac">RESTAURANTS</h2>
+            <div class="grid jcsb aic">
+                <div class="gridsec2 pos-rel">
+                    <img data-aos="flip-left" data-aos-duration="1500" src="./images/resta.jpeg" alt="">
+                </div>
+                <div class="gridsec2">
+                    <ul class="pos-rel">
+                        <li>Highways-Break at Hotel Temple City: Chase the monotonous journey with appetizing dishes.
+                        </li>
+                        <li>We can’t forget the delicious moments at Temple city for their exotic and traditional dishes
+                            served with love.</li>
+                        <li>Explore a fusion of South Indian, North Indian, and Tandoor specialties, each prepared with
+                            a home touch that reflects our dedication to authentic recipes.</li>
+                    </ul>
+                    <h3 class="col-main">Our Locations:</h3>
+                    <p>Vadipatti | Ayyankottai | Sivarakottai | Alampatti | Batlagundu By-Pass | Periyar Bus Stand |
+                        Mattuthavani | Uthangudi | Bibikulam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container con-4">
+        <div class="mx-w">
+            <h2 class="tac">ROOMS</h2>
+            <div class="grid jcsb aic">
+                <div class="gridsec2">
+                    <ul class="pos-rel">
+                        <li>A home away from home, Timely Service, Relaxing Upholstery, Spacious Ambience.</li>
+                        <li>Kick off your long
+                            tiring day with relaxing upholstery in spacious ambience at Temple City Hotels.</li>
+                    </ul>
+                    <h3 class="col-main">Our Locations:</h3>
+                    <p>Ayyankottai | Alampatti | Batlagundu By-Pass | Uthangudi</p>
+                </div>
+                <div class="gridsec2"><img data-aos="flip-right" data-aos-duration="1500" src="./images/lodge1.jpeg"
+                        alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container con-5 bg-b">
+        <div class="mx-w">
+            <div class="grid jcsb aic">
+                <div class="gridsec2 pos-rel">
+                    <img class="blos1" data-aos="fade-up" data-aos-duration="1500" src="./images/blos1.jpeg" alt="">
+                    <img class="blos2" data-aos="fade-up" data-aos-duration="1500" src="./images/blos2.jpeg" alt="">
+                    <img class="blos3" data-aos="fade-up" data-aos-duration="1500" src="./images/blos3.jpeg" alt="">
+                </div>
+                <div class="gridsec2 pos-rel dn">
+                    <img class="blos1" data-aos="fade-up" data-aos-duration="1500" src="./images/blos1.jpeg" alt="">
+                </div>
+                <div class="gridsec2">
+                    <ul class="pos-rel">
+                        <li>Each piece we create tells a story. From the carefully selected materials to the meticulous
+                            craftsmanship, every aspect is thoughtfully considered. Our hands shape and mold, imbuing
+                            each creation with its own unique character.</li>
+                        <li>Beyond the tangible, our creations carry something intangible—a piece of our hearts. They
+                            are more than just items; they are tokens of connection, gifts that speak volumes without
+                            uttering a word.</li>
+                        <li>In a world of mass production, we stand apart. Each piece is a testament to individuality
+                            and creativity, celebrating the beauty of imperfection and the allure of the handmade.</li>
+                        <li>Handmade isn’t just about artistry; it’s about sustainability. We prioritize quality over
+                            quantity, using eco-friendly materials and processes that minimize our footprint on the
+                            planet.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container">
+        <div class="mx-w grid jcse aic gap100">
+            <div class="gridsec2 grid jcse aic gap100">
+                <div class="tac col-main">
+                    <img src="./images/logo-main.jpeg" alt="">
+                    <h2>Temple City</h2>
+                </div>
+                <hr>
+                <a class="">
+                    Products
+                    <p>Sweets</p>
+                    <p>Masalas</p>
+                </a>
+                <hr>
+            </div>
+            <div class="gridsec2 grid jcsb aic gap100">
+                <ul>
+                    <li><a href="./restaurats.html">Restaurants</a></li>
+                    <li><a href="">Rooms</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a>
+                            Contact Us
+                            <p>Phone: 63848 99333</p>
+                            <p>mail: customercare@hoteltemplecity.com</p>
+                        </a>
+                        <a>Folllow Us</a> <br>
+                        <a href="https://www.facebook.com/hoteltemplecity" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/hoteltemplecity" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com/"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

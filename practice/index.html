@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            max-width: 1000px;
+            margin: 0 auto;
+            /* scroll-snap-type: x mandatory; */
+            /* -webkit-overflow-scrolling: touch; */
+            /* Optional: Enables momentum scrolling in iOS */
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            scroll-snap-align: start;
+            flex: 0 0 auto;
+            width: 33%;
+            margin: 0 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+            background-color: gainsboro;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .card-content p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card">
+                <img src="./blos2.jpeg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Card 1</h3>
+                    <p>This is the content of card 1.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Add more slides as needed -->
+    </div>
+    <script>
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+
+        let currentSlide = 0;
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const slideWidth = slides[currentSlide].offsetWidth;
+            slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+
+        // Example of using navigation buttons
+        // document.querySelector('.prev').addEventListener('click', prevSlide);
+        // document.querySelector('.next').addEventListener('click', nextSlide);
+
+    </script>
+</body>
+
+</html>
